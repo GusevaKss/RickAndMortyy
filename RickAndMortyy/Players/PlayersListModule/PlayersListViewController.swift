@@ -57,7 +57,7 @@ class PlayersListViewController: UIViewController{
 
         loadPlayersFromUserDefaults()
         
-        fetchPlayersList()
+        obtainPlayersIfNeed()
         
         setupSearchController()
         
@@ -147,6 +147,11 @@ class PlayersListViewController: UIViewController{
         } catch {
             print("Ошибка при загрузке игроков: \(error)")
         }
+    }
+    
+    private func obtainPlayersIfNeed() {
+        guard players.isEmpty else {return}
+        fetchPlayersList()
     }
     
     @objc private func keyboardWillShow(notification: Notification) {

@@ -70,16 +70,17 @@ class PlayersListCell: UITableViewCell {
     }
     
     private func setupConstraints() {
+        
         playerNumber.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(10)
+            make.left.equalToSuperview().offset(20)
             make.centerY.equalToSuperview()
-            make.width.equalTo(40)
+            make.width.equalTo(30)
         }
         
         playerImage.snp.makeConstraints { make in
-            make.left.equalTo(playerNumber.snp.right).offset(8)
+            make.left.equalTo(playerNumber.snp.right).offset(5)
             make.centerY.equalToSuperview()
-            make.width.height.equalTo(40)
+            make.size.equalTo(40)
         }
         
         uspLabel.snp.makeConstraints { make in
@@ -104,7 +105,7 @@ class PlayersListCell: UITableViewCell {
     func configure(with player: PlayersListItem) {
         
         playerNumber.text = "\(player.number)"
-        playerImage.image = player.image
+        playerImage.image = player.image?.withTintColor(.systemBlue)
         nameLabel.text = player.name
         matchesLabel.text = player.matches
         uspLabel.text = player.usp

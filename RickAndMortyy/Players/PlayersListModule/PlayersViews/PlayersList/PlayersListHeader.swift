@@ -61,12 +61,12 @@ class PlayersListHeader: UIView {
     
     private func setupConstraints() {
         headerNumber.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(10)
+            make.left.equalToSuperview().offset(20)
             make.centerY.equalToSuperview()
         }
         
         headerPlayerImagePlaceholder.snp.makeConstraints { make in
-            make.left.equalTo(headerNumber.snp.left).offset(30)
+            make.left.equalTo(headerNumber.snp.left).offset(20)
             make.centerY.equalToSuperview()
             make.width.height.equalTo(40)
         }
