@@ -8,15 +8,20 @@
 import UIKit
 import SnapKit
 
-//TODO: .
-// 5) добавленный пользователь должен оставаться в приложении. UserDefaults
+//TODO:
+// 5) добавленный пользователь должен оставаться в приложении. UserDefaults - DONE
 
 // 16) Поправить вёрстку при добавлении пользователя - обрезать - DONE
 // 17) Сделать валидацию при добавлении игрока, можно дизейблить кнопку или добавить алерт - DONE
 // 18) Добавить алерт при удалении - DONE
+// 19) БОНУС: плейсхолдеры
 
 class PlayersListViewController: UIViewController{
     private let network: PlayersNetworkProtocol
+    
+    private let userDefaultsKey = "savedPlayers"
+
+    private let searchController = UISearchController(searchResultsController: nil)
     
     private var players: [PlayersListItem] = []
     private var filteredPlayers: [PlayersListItem] = []
@@ -24,8 +29,6 @@ class PlayersListViewController: UIViewController{
     private var isSearching: Bool {
         return !(searchController.searchBar.text?.isEmpty ?? true)
     }
-    
-    private let searchController = UISearchController(searchResultsController: nil)
     
     private lazy var tableView: UITableView = {
         let table = UITableView()
@@ -51,6 +54,9 @@ class PlayersListViewController: UIViewController{
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         setupConstraints()
+
+        loadPlayersFromUserDefaults()
+        
         fetchPlayersList()
         
         setupSearchController()
@@ -110,6 +116,7 @@ class PlayersListViewController: UIViewController{
     
     private func updatePlayersList(with newPlayer: PlayersListItem) {
         players.insert(newPlayer, at: 0)
+        savePlayersToUserDefaults()
         tableView.reloadData()
     }
     
@@ -122,6 +129,24 @@ class PlayersListViewController: UIViewController{
                                                selector: #selector(keyboardWillHide),
                                                name: UIResponder.keyboardWillHideNotification,
                                                object: nil)
+    }
+
+    private func savePlayersToUserDefaults() {
+        do {
+            let data = try JSONEncoder().encode(players)
+            UserDefaults.standard.set(data, forKey: userDefaultsKey)
+        } catch {
+            print("Ошибка при сохранении игроков: \(error)")
+        }
+    }
+
+    private func loadPlayersFromUserDefaults() {
+        guard let data = UserDefaults.standard.data(forKey: userDefaultsKey) else { return }
+        do {
+            players = try JSONDecoder().decode([PlayersListItem].self, from: data)
+        } catch {
+            print("Ошибка при загрузке игроков: \(error)")
+        }
     }
     
     @objc private func keyboardWillShow(notification: Notification) {
@@ -185,6 +210,7 @@ extension PlayersListViewController: UITableViewDelegate {
 
                 tableView.deleteRows(at: [indexPath], with: .automatic)
                 completionHandler(true)
+                self.savePlayersToUserDefaults()
             })
             self.present(alert, animated: true)
         }
