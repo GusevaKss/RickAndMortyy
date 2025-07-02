@@ -71,6 +71,7 @@ class AddPlayerBottomSheetViewController: UIViewController {
         addButton.setTitle("Добавить", for: .normal)
         addButton.titleLabel?.font = .boldSystemFont(ofSize: 18)
         addButton.addTarget(self, action: #selector(addPlayerTapped), for: .touchUpInside)
+        addButton.isEnabled = false
         
         contentView.addSubview(numberField)
         contentView.addSubview(nameField)

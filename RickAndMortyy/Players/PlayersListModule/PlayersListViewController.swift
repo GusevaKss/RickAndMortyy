@@ -8,18 +8,9 @@
 import UIKit
 import SnapKit
 
-//TODO:
-// 5) добавленный пользователь должен оставаться в приложении. UserDefaults - DONE
-
-// 16) Поправить вёрстку при добавлении пользователя - обрезать - DONE
-// 17) Сделать валидацию при добавлении игрока, можно дизейблить кнопку или добавить алерт - DONE
-// 18) Добавить алерт при удалении - DONE
-// 19) БОНУС: плейсхолдеры
-
 class PlayersListViewController: UIViewController{
     private let network: PlayersNetworkProtocol
-    
-    private let userDefaultsKey = "savedPlayers"
+    private let storage: PlayersStorageWorkerProtocol
 
     private let searchController = UISearchController(searchResultsController: nil)
     
@@ -40,8 +31,9 @@ class PlayersListViewController: UIViewController{
         return table
     }()
     
-    init(network: PlayersNetworkProtocol) {
+    init(network: PlayersNetworkProtocol, storage: PlayersStorageWorkerProtocol) {
         self.network = network
+        self.storage = storage
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -132,21 +124,11 @@ class PlayersListViewController: UIViewController{
     }
 
     private func savePlayersToUserDefaults() {
-        do {
-            let data = try JSONEncoder().encode(players)
-            UserDefaults.standard.set(data, forKey: userDefaultsKey)
-        } catch {
-            print("Ошибка при сохранении игроков: \(error)")
-        }
+        storage.save(players: players)
     }
 
     private func loadPlayersFromUserDefaults() {
-        guard let data = UserDefaults.standard.data(forKey: userDefaultsKey) else { return }
-        do {
-            players = try JSONDecoder().decode([PlayersListItem].self, from: data)
-        } catch {
-            print("Ошибка при загрузке игроков: \(error)")
-        }
+        players = storage.load()
     }
     
     private func obtainPlayersIfNeed() {

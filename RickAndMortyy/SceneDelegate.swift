@@ -39,7 +39,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationControllerSecond = UINavigationController(rootViewController: characterListViewControllerSecond)
         
         let playersListNetworkService = PlayersNetworkService()
-        let playersListAssembly = PlayersListAssembly(networkService: playersListNetworkService)
+        let storageWorker = PlayersStorageWorker()
+        let playersListAssembly = PlayersListAssembly(networkService: playersListNetworkService, storage: storageWorker)
         let playersListViewController = playersListAssembly.buildPlayers()
         playersListViewController.tabBarItem = UITabBarItem(
             title: "Players",

@@ -9,13 +9,15 @@ import Foundation
 
 class PlayersListAssembly {
     private let networkService: PlayersNetworkProtocol
+    private let storage: PlayersStorageWorkerProtocol
     
-    init(networkService: PlayersNetworkProtocol) {
+    init(networkService: PlayersNetworkProtocol, storage: PlayersStorageWorkerProtocol) {
         self.networkService = networkService
+        self.storage = storage
     }
     
     func buildPlayers() -> PlayersListViewController {
-        return PlayersListViewController(network: networkService)
+        return PlayersListViewController(network: networkService, storage: storage)
     }
 }
 
