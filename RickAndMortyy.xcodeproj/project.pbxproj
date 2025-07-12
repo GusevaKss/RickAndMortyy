@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90023232E20FB5400E76A9E /* LayoutPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90023222E20FB5400E76A9E /* LayoutPracticeViewController.swift */; };
+		F90023262E20FBA000E76A9E /* ReservationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90023252E20FBA000E76A9E /* ReservationCell.swift */; };
+		F90023292E20FDB800E76A9E /* LayoutPracticeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90023282E20FDB800E76A9E /* LayoutPracticeAssembly.swift */; };
 		F90F5DEE2E0EAB9600AC32D0 /* AddPlayerBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90F5DED2E0EAB9600AC32D0 /* AddPlayerBottomSheetViewController.swift */; };
 		F939EF812D9EC07D00B33D6E /* PlayersListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F939EF802D9EC07D00B33D6E /* PlayersListHeader.swift */; };
 		F94D34192D9E6DF100BC29FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D34182D9E6DF100BC29FA /* AppDelegate.swift */; };
@@ -19,7 +22,6 @@
 		F94D343C2D9E6EED00BC29FA /* CharacterDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D343B2D9E6EED00BC29FA /* CharacterDetailAssembly.swift */; };
 		F94D343E2D9E6F0400BC29FA /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D343D2D9E6F0400BC29FA /* CharacterDetailViewController.swift */; };
 		F94D34422D9E6F4B00BC29FA /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D34412D9E6F4B00BC29FA /* CharacterDetail.swift */; };
-		F94D34442D9E6F6B00BC29FA /* NO_CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D34432D9E6F6B00BC29FA /* NO_CharacterDetailView.swift */; };
 		F94D34482D9E6FA000BC29FA /* PlayersListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D34472D9E6FA000BC29FA /* PlayersListAssembly.swift */; };
 		F94D344A2D9E6FB000BC29FA /* PlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D34492D9E6FB000BC29FA /* PlayersListViewController.swift */; };
 		F94D344D2D9E6FE400BC29FA /* PlayersListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D344C2D9E6FE400BC29FA /* PlayersListItem.swift */; };
@@ -31,18 +33,21 @@
 		F95461912E09DC2200829877 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F95461902E09DC2200829877 /* SnapKit */; };
 		F95461952E09DC2C00829877 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F95461942E09DC2C00829877 /* Alamofire */; };
 		F95461992E09DC3500829877 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F95461982E09DC3500829877 /* Kingfisher */; };
-		F9561E892DAD5C84001AA6F9 /* DetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9561E882DAD5C84001AA6F9 /* DetailsAssembly.swift */; };
-		F9561E8B2DAD5C90001AA6F9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9561E8A2DAD5C90001AA6F9 /* DetailsViewController.swift */; };
-		F9561E8E2DAD5CA8001AA6F9 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9561E8D2DAD5CA8001AA6F9 /* DetailTableViewCell.swift */; };
-		F9561E902DAD6705001AA6F9 /* PlayerDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9561E8F2DAD6705001AA6F9 /* PlayerDataItem.swift */; };
-		F9690A5C2DE6482D0060CE11 /* NO_PlayerDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9690A5B2DE6482D0060CE11 /* NO_PlayerDetailAssembly.swift */; };
 		F9690A5E2DE6484B0060CE11 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9690A5D2DE6484B0060CE11 /* PlayerDetailViewController.swift */; };
 		F9690A612DE648810060CE11 /* PlayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9690A602DE648810060CE11 /* PlayerDetail.swift */; };
 		F9974D6E2DCA42FA00804188 /* CharacterDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9974D6D2DCA42FA00804188 /* CharacterDetailImageCell.swift */; };
 		F9974D712DCA442F00804188 /* CharacterDetailLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9974D702DCA442F00804188 /* CharacterDetailLabelCell.swift */; };
+		F9E18D3F2E22440700B5FF73 /* ReservationListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E18D3E2E22440700B5FF73 /* ReservationListItem.swift */; };
+		F9E18D412E22454D00B5FF73 /* ReservationNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E18D402E22454D00B5FF73 /* ReservationNetworkProtocol.swift */; };
+		F9E18D432E22456300B5FF73 /* ReservationNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E18D422E22456300B5FF73 /* ReservationNetworkService.swift */; };
+		F9FA3E602E153A980035C259 /* PlayersStorageWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA3E5F2E153A980035C259 /* PlayersStorageWorker.swift */; };
+		F9FA3E622E153AA70035C259 /* PlayersStorageWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA3E612E153AA70035C259 /* PlayersStorageWorkerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F90023222E20FB5400E76A9E /* LayoutPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPracticeViewController.swift; sourceTree = "<group>"; };
+		F90023252E20FBA000E76A9E /* ReservationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationCell.swift; sourceTree = "<group>"; };
+		F90023282E20FDB800E76A9E /* LayoutPracticeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPracticeAssembly.swift; sourceTree = "<group>"; };
 		F90F5DED2E0EAB9600AC32D0 /* AddPlayerBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerBottomSheetViewController.swift; sourceTree = "<group>"; };
 		F939EF802D9EC07D00B33D6E /* PlayersListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersListHeader.swift; sourceTree = "<group>"; };
 		F94D34152D9E6DF100BC29FA /* RickAndMortyy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +62,6 @@
 		F94D343B2D9E6EED00BC29FA /* CharacterDetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailAssembly.swift; sourceTree = "<group>"; };
 		F94D343D2D9E6F0400BC29FA /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		F94D34412D9E6F4B00BC29FA /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
-		F94D34432D9E6F6B00BC29FA /* NO_CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NO_CharacterDetailView.swift; sourceTree = "<group>"; };
 		F94D34472D9E6FA000BC29FA /* PlayersListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersListAssembly.swift; sourceTree = "<group>"; };
 		F94D34492D9E6FB000BC29FA /* PlayersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersListViewController.swift; sourceTree = "<group>"; };
 		F94D344C2D9E6FE400BC29FA /* PlayersListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersListItem.swift; sourceTree = "<group>"; };
@@ -66,15 +70,15 @@
 		F94D34552D9E708400BC29FA /* CharactersNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersNetworkService.swift; sourceTree = "<group>"; };
 		F94D34572D9E708F00BC29FA /* PlayersNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersNetworkProtocol.swift; sourceTree = "<group>"; };
 		F94D34592D9E709900BC29FA /* PlayersNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersNetworkService.swift; sourceTree = "<group>"; };
-		F9561E882DAD5C84001AA6F9 /* DetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAssembly.swift; sourceTree = "<group>"; };
-		F9561E8A2DAD5C90001AA6F9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		F9561E8D2DAD5CA8001AA6F9 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
-		F9561E8F2DAD6705001AA6F9 /* PlayerDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDataItem.swift; sourceTree = "<group>"; };
-		F9690A5B2DE6482D0060CE11 /* NO_PlayerDetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NO_PlayerDetailAssembly.swift; sourceTree = "<group>"; };
 		F9690A5D2DE6484B0060CE11 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 		F9690A602DE648810060CE11 /* PlayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetail.swift; sourceTree = "<group>"; };
 		F9974D6D2DCA42FA00804188 /* CharacterDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailImageCell.swift; sourceTree = "<group>"; };
 		F9974D702DCA442F00804188 /* CharacterDetailLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailLabelCell.swift; sourceTree = "<group>"; };
+		F9E18D3E2E22440700B5FF73 /* ReservationListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListItem.swift; sourceTree = "<group>"; };
+		F9E18D402E22454D00B5FF73 /* ReservationNetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationNetworkProtocol.swift; sourceTree = "<group>"; };
+		F9E18D422E22456300B5FF73 /* ReservationNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationNetworkService.swift; sourceTree = "<group>"; };
+		F9FA3E5F2E153A980035C259 /* PlayersStorageWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersStorageWorker.swift; sourceTree = "<group>"; };
+		F9FA3E612E153AA70035C259 /* PlayersStorageWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersStorageWorkerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F90023212E20FB3800E76A9E /* LayoutPractice */ = {
+			isa = PBXGroup;
+			children = (
+				F90023272E20FD9600E76A9E /* LayoutPracticeModule */,
+				F9E18D3D2E2243D900B5FF73 /* LayoutPracticeModels */,
+				F90023242E20FB6A00E76A9E /* LayoutPracticeViews */,
+			);
+			path = LayoutPractice;
+			sourceTree = "<group>";
+		};
+		F90023242E20FB6A00E76A9E /* LayoutPracticeViews */ = {
+			isa = PBXGroup;
+			children = (
+				F90023252E20FBA000E76A9E /* ReservationCell.swift */,
+			);
+			path = LayoutPracticeViews;
+			sourceTree = "<group>";
+		};
+		F90023272E20FD9600E76A9E /* LayoutPracticeModule */ = {
+			isa = PBXGroup;
+			children = (
+				F90023282E20FDB800E76A9E /* LayoutPracticeAssembly.swift */,
+				F90023222E20FB5400E76A9E /* LayoutPracticeViewController.swift */,
+			);
+			path = LayoutPracticeModule;
+			sourceTree = "<group>";
+		};
 		F94D340C2D9E6DF100BC29FA = {
 			isa = PBXGroup;
 			children = (
@@ -110,10 +141,11 @@
 		F94D34172D9E6DF100BC29FA /* RickAndMortyy */ = {
 			isa = PBXGroup;
 			children = (
-				F9561E872DAD5C4F001AA6F9 /* Details */,
 				F94D342C2D9E6E0400BC29FA /* RickAndMortyCharacters */,
 				F94D34452D9E6F8500BC29FA /* Players */,
+				F90023212E20FB3800E76A9E /* LayoutPractice */,
 				F94D34522D9E705A00BC29FA /* Networking */,
+				F9FA3E5E2E153A7E0035C259 /* StorageWorker */,
 				F94D34182D9E6DF100BC29FA /* AppDelegate.swift */,
 				F94D341A2D9E6DF100BC29FA /* SceneDelegate.swift */,
 				F94D34212D9E6DF300BC29FA /* Assets.xcassets */,
@@ -196,7 +228,6 @@
 		F94D34402D9E6F2200BC29FA /* CharacterDetailViews */ = {
 			isa = PBXGroup;
 			children = (
-				F94D34432D9E6F6B00BC29FA /* NO_CharacterDetailView.swift */,
 				F9974D6F2DCA43F900804188 /* CharacterDetailCells */,
 			);
 			path = CharacterDetailViews;
@@ -227,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				F94D344C2D9E6FE400BC29FA /* PlayersListItem.swift */,
-				F9561E8F2DAD6705001AA6F9 /* PlayerDataItem.swift */,
 			);
 			path = PlayersModels;
 			sourceTree = "<group>";
@@ -256,32 +286,15 @@
 				F94D34552D9E708400BC29FA /* CharactersNetworkService.swift */,
 				F94D34572D9E708F00BC29FA /* PlayersNetworkProtocol.swift */,
 				F94D34592D9E709900BC29FA /* PlayersNetworkService.swift */,
+				F9E18D402E22454D00B5FF73 /* ReservationNetworkProtocol.swift */,
+				F9E18D422E22456300B5FF73 /* ReservationNetworkService.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		F9561E872DAD5C4F001AA6F9 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				F9561E8C2DAD5C94001AA6F9 /* Subviews */,
-				F9561E882DAD5C84001AA6F9 /* DetailsAssembly.swift */,
-				F9561E8A2DAD5C90001AA6F9 /* DetailsViewController.swift */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		F9561E8C2DAD5C94001AA6F9 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				F9561E8D2DAD5CA8001AA6F9 /* DetailTableViewCell.swift */,
-			);
-			path = Subviews;
 			sourceTree = "<group>";
 		};
 		F9690A5A2DE354CC0060CE11 /* PlayerDetailModule */ = {
 			isa = PBXGroup;
 			children = (
-				F9690A5B2DE6482D0060CE11 /* NO_PlayerDetailAssembly.swift */,
 				F9690A5D2DE6484B0060CE11 /* PlayerDetailViewController.swift */,
 				F9690A5F2DE648610060CE11 /* PlayerDetailModels */,
 			);
@@ -303,6 +316,23 @@
 				F9974D702DCA442F00804188 /* CharacterDetailLabelCell.swift */,
 			);
 			path = CharacterDetailCells;
+			sourceTree = "<group>";
+		};
+		F9E18D3D2E2243D900B5FF73 /* LayoutPracticeModels */ = {
+			isa = PBXGroup;
+			children = (
+				F9E18D3E2E22440700B5FF73 /* ReservationListItem.swift */,
+			);
+			path = LayoutPracticeModels;
+			sourceTree = "<group>";
+		};
+		F9FA3E5E2E153A7E0035C259 /* StorageWorker */ = {
+			isa = PBXGroup;
+			children = (
+				F9FA3E612E153AA70035C259 /* PlayersStorageWorkerProtocol.swift */,
+				F9FA3E5F2E153A980035C259 /* PlayersStorageWorker.swift */,
+			);
+			path = StorageWorker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,8 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94D343C2D9E6EED00BC29FA /* CharacterDetailAssembly.swift in Sources */,
-				F94D34442D9E6F6B00BC29FA /* NO_CharacterDetailView.swift in Sources */,
-				F9561E892DAD5C84001AA6F9 /* DetailsAssembly.swift in Sources */,
+				F90023232E20FB5400E76A9E /* LayoutPracticeViewController.swift in Sources */,
 				F94D34422D9E6F4B00BC29FA /* CharacterDetail.swift in Sources */,
 				F9974D712DCA442F00804188 /* CharacterDetailLabelCell.swift in Sources */,
 				F9690A5E2DE6484B0060CE11 /* PlayerDetailViewController.swift in Sources */,
@@ -395,19 +424,22 @@
 				F94D34562D9E708400BC29FA /* CharactersNetworkService.swift in Sources */,
 				F94D34392D9E6EA700BC29FA /* CharacterListCell.swift in Sources */,
 				F94D34542D9E707900BC29FA /* CharactersNetworkProtocol.swift in Sources */,
-				F9561E902DAD6705001AA6F9 /* PlayerDataItem.swift in Sources */,
 				F94D34512D9E703800BC29FA /* PlayersListCell.swift in Sources */,
-				F9561E8E2DAD5CA8001AA6F9 /* DetailTableViewCell.swift in Sources */,
-				F9690A5C2DE6482D0060CE11 /* NO_PlayerDetailAssembly.swift in Sources */,
 				F90F5DEE2E0EAB9600AC32D0 /* AddPlayerBottomSheetViewController.swift in Sources */,
+				F9FA3E622E153AA70035C259 /* PlayersStorageWorkerProtocol.swift in Sources */,
+				F9E18D432E22456300B5FF73 /* ReservationNetworkService.swift in Sources */,
 				F94D344A2D9E6FB000BC29FA /* PlayersListViewController.swift in Sources */,
-				F9561E8B2DAD5C90001AA6F9 /* DetailsViewController.swift in Sources */,
+				F9FA3E602E153A980035C259 /* PlayersStorageWorker.swift in Sources */,
+				F9E18D3F2E22440700B5FF73 /* ReservationListItem.swift in Sources */,
 				F9690A612DE648810060CE11 /* PlayerDetail.swift in Sources */,
 				F94D34352D9E6E7100BC29FA /* CharacterListItem.swift in Sources */,
 				F94D34322D9E6E4300BC29FA /* CharacterListViewController.swift in Sources */,
+				F90023262E20FBA000E76A9E /* ReservationCell.swift in Sources */,
 				F94D344D2D9E6FE400BC29FA /* PlayersListItem.swift in Sources */,
+				F90023292E20FDB800E76A9E /* LayoutPracticeAssembly.swift in Sources */,
 				F94D34582D9E708F00BC29FA /* PlayersNetworkProtocol.swift in Sources */,
 				F94D34482D9E6FA000BC29FA /* PlayersListAssembly.swift in Sources */,
+				F9E18D412E22454D00B5FF73 /* ReservationNetworkProtocol.swift in Sources */,
 				F939EF812D9EC07D00B33D6E /* PlayersListHeader.swift in Sources */,
 				F9974D6E2DCA42FA00804188 /* CharacterDetailImageCell.swift in Sources */,
 				F94D341B2D9E6DF100BC29FA /* SceneDelegate.swift in Sources */,

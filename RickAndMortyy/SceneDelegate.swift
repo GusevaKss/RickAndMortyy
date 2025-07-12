@@ -49,7 +49,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navigationControllerThird = UINavigationController(rootViewController: playersListViewController)
         
-        tabBarController.viewControllers = [navigationControllerFirst, navigationControllerSecond, navigationControllerThird]
+        let layoutPracticeNetworkService = ReservationNetworkService()
+        let layoutPracticeAssembly = LayoutPracticeAssembly(networkService: layoutPracticeNetworkService)
+        let layoutPracticeViewController = layoutPracticeAssembly.buildLayoutPractice()
+        layoutPracticeViewController.tabBarItem = UITabBarItem(
+            title: "Reservation",
+            image: UIImage(systemName: "sun.min"),
+            tag: 3)
+        
+        let navigationControllerFourth = UINavigationController(rootViewController: layoutPracticeViewController)
+        
+        tabBarController.viewControllers = [navigationControllerFirst, navigationControllerSecond, navigationControllerThird, navigationControllerFourth]
         
         window?.rootViewController = tabBarController
         
